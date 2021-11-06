@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.nav{
+  margin: space-between;
+  background-color: #ffffff;
+  position: absolute;
+  width: 1440px;
+  height: 66px;
+  left: 0px;
+  top: 0px;
+}
+
+body{
+  background-color: #E5E5E5;
+  
+}
+
+.user-info{
+  align-items: center;
+}
