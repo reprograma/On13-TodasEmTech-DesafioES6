@@ -45,7 +45,7 @@
 
 ## Até quando devo entregar ?
 
-Sexta-feira 04/06/2021
+Sexta-feira 12/11/2021
 
 ## Dúvidas e sugestões ?
 
