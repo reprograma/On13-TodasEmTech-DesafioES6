@@ -1,0 +1,86 @@
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local('Material Icons'),
+          local('MaterialIcons-Regular'),
+          url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+          url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+          url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+      }
+
+    body {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #container {
+        position: absolute;
+        width: 1440px;
+        height: 66px;
+        left: 0px;
+        top: 0px;
+    }
+
+    #id-logo {
+        position: absolute;
+        width: 207px;
+        height: 40px;
+        left: 13px;
+        top: 13px;
+    }
+
+    #input-usuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 12px 11px;
+
+        position: absolute;
+        width: 350px;
+        height: 42px;
+        left: 968px;
+        top: 13px;
+
+        background: #FFFFFF;
+        border: 1px solid #BEBEBE;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+      
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+      
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+      }
+
+    #btn-usuario {
+        position: static;
+        width: 18px;
+        height: 18px;
+        left: 359px;
+        top: 0px;
+    }
