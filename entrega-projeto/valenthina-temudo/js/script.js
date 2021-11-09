@@ -30,8 +30,8 @@
                 .then(dados => dados)
                 .catch(error => console.log(error))
 
-            if (usuarioFetch) { //se tem resultado
-                preeencherDadosUsuario()
+            if (usuarioFetch && usuarioFetch.name) { //se tem resultado
+                preeencherDadosUsuario(usuarioFetch)
             } else {
                 error()
             }

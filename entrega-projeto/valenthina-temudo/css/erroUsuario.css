@@ -1,5 +1,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
+    div {
+        text-align: center;
+    }
+
     body {
         background-color: #E5E5E5;
     }
@@ -85,4 +89,44 @@
         width: 20px;
         left: 0px;
         margin-block-end: 100px;
+    }
+
+    h1 {
+        position: absolute;
+        left: 32.29%;
+        right: 29.86%;
+        top: 17.09%;
+        bottom: 71.19%;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #EC9B69;
+    }
+
+    p {
+        position: absolute;
+        left: 40.14%;
+        right: 37.71%;
+        top: 23.14%;
+        bottom: 72.95%;
+        margin-top: 40px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #313131;
+
+        opacity: 0.5;
     }
