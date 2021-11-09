@@ -22,18 +22,25 @@
     const buscarUsuario = async (evento) => {
         evento.preventDefault();
 
-        let usuario = input.value;
+        let usuario = input.value.trim()
 
-        const usuarioFetch = await fetch(`${baseURL}/users/${usuario}`)
-            .then(response => response.json())
-            .then(dados => dados)
-            .catch(error => console.log(error))
+        if (!!usuario) {
+            const usuarioFetch = await fetch(`${baseURL}/users/${usuario}`)
+                .then(response => response.json())
+                .then(dados => dados)
+                .catch(error => console.log(error))
 
-        validarUsuario(usuarioFetch);
-        validarInput();
+            if (usuarioFetch) { //se tem resultado
+                preeencherDadosUsuario()
+            } else {
+                error()
+            }
+        } else {
+            alert("Nome de usuário inválido")
+        }
     }
 
-    validarUsuario = (user) => {
+    function preeencherDadosUsuario(user) {
         imgUsuario.setAttribute("src", user.avatar_url);
         imgUsuario.setAttribute("alt", user.name)
         nomeUsuario.textContent = user.name;
@@ -43,12 +50,10 @@
         repoUsuario.textContent = user.repos_url;
     }
 
-    const validarInput = () => {
-        input.value = ""
+    function error() {
+        if (error) {
+            location.replace("./erroUsuario.html")
+        }
     }
 
     formulario.addEventListener("submit", buscarUsuario);
-
-    function teste () {
-        location.replace("./usuarioRepo.html")
-    }

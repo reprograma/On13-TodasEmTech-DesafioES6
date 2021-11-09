@@ -31,7 +31,7 @@
         const pokemonFetch = await fetch(`${baseURL}pokemon/${meuPoke}`)
             .then(response => response.json())
             .then(dados => dados)
-            .catch(err => meuErro())
+            .catch(err => err())
 
         pegaPokemon(pokemonFetch)
         validarInput();
@@ -47,7 +47,7 @@
         input.value = ""
     }
 
-    const meuErro = () => {
+    const err = () => {
         const divErro = document.createElement("div");
         divErro.innerHTML = `<p> por favor digite o nome correto do pokemon </p>`
         document.body.appendChild(divErro);
