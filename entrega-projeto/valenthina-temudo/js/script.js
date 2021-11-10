@@ -50,6 +50,11 @@
         repoUsuario.textContent = user.repos_url;
     }
 
+    const reposUsuario = async (repo) =>
+    repo.preventDefault();
+
+    const repoFetch = await fetch ()
+
     function error() {
         if (error) {
             location.replace("./erroUsuario.html")

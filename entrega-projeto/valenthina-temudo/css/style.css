@@ -68,11 +68,9 @@
     #btn {
         position: absolute;
         width: 20px;
-        height: 15px;
         left: 228px;
-        padding: 8px;
+        padding: 5px;
 
-        font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -82,7 +80,69 @@
 
     #lupa {
         position: absolute;
-        width: 20px;
+        width: 30px;
         left: 0px;
-        margin-block-end: 100px;
+    }
+
+    #card-usuario {
+        text-align: center;
+    }
+    #img-usuario {
+        width: 252px;
+        border-radius: 8px;
+        margin-top: 100px;
+    }
+    
+    #nome-usuario {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        color: #EC9B69;
+        margin: 10px 50px 0px 0px;
+    }
+    
+    #username {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #313131;
+        opacity: 0.8;
+        margin: 10px 160px 0px 0px;
+    }
+
+    #bio {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #313131;
+        opacity: 0.8;
+        margin: 10px 10px 0px 0px;
+    }
+
+    #seguidores {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #313131;
+        opacity: 0.8;
+        margin: 20px 200px 20px 0px;
+    }
+
+
+    #seguidores::before{
+        content: url('./../../../images/people_outline.png');
+        margin: 10px 10px 10px 10px ;
+    }
+
+    #repo {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #313131;
+        opacity: 0.8;
     }
