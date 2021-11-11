@@ -35,21 +35,112 @@ ul{
 
 li{
     list-style: none;
+    max-height: 6vh;
 }
 
-.logo{
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 40px;
+ul li:first-child{
     display: flex;
+    align-items: center;
 }
 
-.logo span:first-child{
-    color: #EC9B69;
+.logo-image{
+    width: auto;
+    height: 50%;
 }
 
 input{
     width: 413px;
     height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    border-radius: 8px;
+    outline: none;
 }
 
+::placeholder{
+    padding-left: 11px;
+}
+
+.image-lupa{
+    width: 20px;
+    position: relative;
+    right: 37px;
+    transform: rotate(270deg);
+}
+
+/* Section information */
+
+section{
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+/* div information */
+.informations{
+    width: 18%;
+    display: none;
+}
+
+.user-image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* div error */
+.error{
+    min-height: 50%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+.error-title{
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 60px;
+    color: #EC9B69;
+}
+
+.error-paragrapg{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 60px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.error-image{
+    width: 90%;
+    height: 56%;
+}
+
+
+/* Footer */
+
+footer{
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+    
+    
+}
+
+a{
+    color: #EC9B69;
+    opacity: 1;
+    text-decoration: none;
+}
