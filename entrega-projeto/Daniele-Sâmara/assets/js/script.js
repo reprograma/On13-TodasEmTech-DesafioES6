@@ -1,25 +1,22 @@
-// const usuario = document.querySelector("");
-// const usuario = "daniszcode";
-const myHeaders = new Headers();
+const user = document.querySelector("input.input");
+const usuarios = user;
+const fotoPerfil = document.querySelector("img.foto-perfil");
+const botao = document.querySelector(".botao");
 
+const myHeaders = new Headers();
 const myInit = {
   method: "GET",
   headers: myHeaders,
 };
 
-function req(user) {
-  fetch(`https://api.github.com/users/octocat`, myInit)
-    .then((response) => {
-      console.log(response.json());
-    })
-    .then((response) => {
-      response.forEach((element) => {
-        console.log(element);
-      });
+botao.addEventListener("click", function req() {
+  console.log(usuarios.value);
+  fetch(`https://api.github.com/users/${usuarios.value}`)
+    .then((response) => response.json())
+    .then((item) => {
+      fotoPerfil.setAttribute = ("src", item.avatar_url);
     })
     .catch((err) => {
       console.log(err);
     });
-}
-
-req();
+});
