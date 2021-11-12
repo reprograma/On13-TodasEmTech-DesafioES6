@@ -1,12 +1,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
     body {
-        background-color: #E5E5E5;
+        background: #E5E5E5;
     }
 
-    #cabecalho {
+    #header {
         position: absolute;
-        width: 100%;
+        width: 1440px;
         height: 66px;
         left: 0px;
         top: 0px;
@@ -14,21 +14,7 @@
         background: #FFFFFF;
     }
 
-    #id-logo {
-        position: absolute;
-        width: 207px;
-        height: 40px;
-        left: 13px;
-        top: 13px;
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 40px;
-        color: #EC9B69;
-    }
-
-    #form-busca {
+    #input-busca {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,7 +22,7 @@
         padding: 12px 11px;
 
         position: absolute;
-        width: 300px;
+        width: 403px;
         height: 42px;
         left: 968px;
         top: 13px;
@@ -47,10 +33,174 @@
         border-radius: 8px;
     }
 
+    #form-usuario {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 377px;
+        height: 18px;
+        left: 11px;
+        top: 12px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+
     #input-usuario {
         position: static;
-        width: 200px;
-        height: 15px;
+        width: 351px;
+        height: 18px;
+        left: 0px;
+        top: 0px;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #btn {
+        position: static;
+        width: 18px;
+        height: 18px;
+        left: 359px;
+        top: 0px;
+        /* background: #FFFFFF; */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #img-btn {
+        position: static;
+        width: 18px;
+        height: 18px;
+        left: 359px;
+        top: 0px;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+
+        color: #313131;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #id-logo {
+        position: absolute;
+        width: 207px;
+        height: 40px;
+        left: 13px;
+        top: 13px;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: #EC9B69;
+    }
+
+    #card-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: absolute;
+        width: 252px;
+        height: 426px;
+        left: 90px;
+        top: 179px;
+    }
+
+    #img-usuario {
+        position: static;
+        width: 252px;
+        height: 250px;
+        left: 0px;
+        top: 0px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+        border-radius: 8px;
+    }
+
+    #nome-usuario {
+        position: static;
+        width: 202px;
+        height: 40px;
+        left: 0px;
+        top: 0px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 4px 0px;
+        color: #EC9B69;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #username {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 68.75%;
+        bottom: -31.25%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 4px 0px;
+    }
+
+    #bio {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 66.67%;
+        bottom: 0%;
 
         font-family: Quicksand;
         font-style: normal;
@@ -62,87 +212,392 @@
 
         opacity: 0.5;
 
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 16px 0px;
+    }
+
+    #card-segui-repo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 140px;
+        height: 40px;
+        left: 0px;
+        top: 386px;
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+
+    #info-repo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+        position: static;
+        width: 66px;
+        height: 40px;
+        left: 74px;
+        top: 0px;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
         margin: 0px 8px;
     }
 
-    #btn {
-        position: absolute;
-        width: 20px;
-        left: 228px;
-        padding: 5px;
+    #repo {
+        position: static;
+        left: 53.79%;
+        right: 5.3%;
+        top: 10%;
+        bottom: 10%;
 
+        font-family: Quicksand;
         font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        background-color: #ffffff;
-        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
     }
 
-    #lupa {
-        position: absolute;
-        width: 30px;
+    #emoji-repo {
+        position: static;
+        left: 5.3%;
+        right: 58.33%;
+        top: 20%;
+        bottom: 20%;
+
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #info-seguidores {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+        position: static;
+        width: 66px;
+        height: 40px;
         left: 0px;
-    }
+        top: 0px;
 
-    #card-usuario {
-        text-align: center;
-    }
-    #img-usuario {
-        width: 252px;
+        background: #FFFFFF;
         border-radius: 8px;
-        margin-top: 100px;
-    }
-    
-    #nome-usuario {
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        color: #EC9B69;
-        margin: 10px 50px 0px 0px;
-    }
-    
-    #username {
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        color: #313131;
-        opacity: 0.8;
-        margin: 10px 160px 0px 0px;
-    }
 
-    #bio {
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        color: #313131;
-        opacity: 0.8;
-        margin: 10px 10px 0px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
     }
 
     #seguidores {
+        position: static;
+        left: 59.85%;
+        right: 9.85%;
+        top: 10%;
+        bottom: 10%;
+
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+
         color: #313131;
-        opacity: 0.8;
-        margin: 20px 200px 20px 0px;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    #emoji-seguidores {
+        color: #EC9B69;
+        position: static;
+        left: 5.3%;
+        right: 58.33%;
+        top: 20%;
+        bottom: 20%;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #cards-repo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: absolute;
+        width: 916px;
+        height: 688px;
+        left: 455px;
+        top: 179px;
+    }
+
+    .mensagem {
+        position: absolute;
+        left: 42.57%;
+        right: 21.88%;
+        top: 27.34%;
+        bottom: 69.73%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #313131;
+    }
+
+    .container {
+        /* position: static;
+        width: 442px;
+        height: 148px;
+        left: 0px;
+        top: 540px;
+
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        margin: 32px 0px; */
+
+        position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+    }
+
+    .titulo-repo {
+        position: static;
+left: 0%;
+right: 59.95%;
+top: 0%;
+bottom: 54.55%;
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+
+color: #313131;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+    }
+
+    .pDescricao {
+        position: static;
+left: 0%;
+right: 0%;
+top: 59.09%;
+bottom: 0%;
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #313131;
+
+opacity: 0.5;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
+    }
+
+    .pEstrela {
+        position: static;
+left: 55%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+align-items: center;
+
+color: #313131;
+
+opacity: 0.5;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 4px;
+    }
+
+    .pLinguagem {
+        position: static;
+left: 20.41%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+
+color: #313131;
+
+opacity: 0.5;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 8px;
     }
 
 
-    #seguidores::before{
-        content: url('./../../../images/people_outline.png');
-        margin: 10px 10px 10px 10px ;
+
+    footer {
+        position: absolute;
+        width: 1440px;
+        height: 66px;
+        left: 0px;
+        top: 958px;
+        align-items: center;
+
+        background: #FFFFFF;
+        display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 209px;
+height: 24px;
+left: 572px;
+top: 980px;
     }
 
-    #repo {
+    /* #footer {
+        display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 209px;
+height: 24px;
+left: 572px;
+top: 980px;
+
+    } */
+
+    #paragrafo {
+        position: static;
+        left: 0%;
+        right: 45.93%;
+        top: 0%;
+        bottom: 0%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 4px;
+    }
+
+    #devs {
+        position: static;
+        left: 55.98%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        color: #313131;
-        opacity: 0.8;
+        line-height: 17px;
+
+        color: #EC9B69;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 4px;
     }

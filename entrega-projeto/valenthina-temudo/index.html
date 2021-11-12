@@ -11,22 +11,43 @@
 </head>
 
 <body>
-    <div id="cabecalho">
+    <header id="header">
         <img id="id-logo" src="./imagens/GithubSearch.svg" alt="">
-        <form id="form-busca" action="#">
-            <input id="input-usuario" type="text" placeholder="Search.." name="search">
-            <button id="btn" type="submit"><img src="./../../images/outline_search_black_24dp.png"
-                    alt="foto lupa"></button>
-        </form>
-    </div>
-    <div id="card-usuario">
+        <section id="input-busca" action="#">
+            <form id="form-usuario">
+                <input id="input-usuario" type="text" placeholder="Digite.." name="search">
+                <button id="btn" type="submit"><img id="img-btn" src="./../../images/outline_search_black_24dp.png"
+                        alt="foto lupa"></button>
+            </form>
+        </section>
+    </header>
+    <section id="card-usuario">
         <img id="img-usuario" src="" alt="">
-        <p id="nome-usuario"></p>
-        <p id="username"></p>
-        <p id="bio"></p>
-        <p id="seguidores"></p>
-        <p id="repo"></p>
-    </div>
+        <div class="info-usuario">
+            <p id="nome-usuario"></p>
+            <p id="username"></p>
+            <p id="bio"></p>
+        </div>
+        <div id="card-segui-repo">
+            <div id="info-seguidores">
+                <p id="seguidores"></p>
+                <img id="emoji-seguidores" src="./imagens/people_outline.png" alt="emoji pessoas">
+            </div>
+            <div id="info-repo">
+                <p id="repo"></p>
+                <img id="emoji-repo" src="./imagens/Vector.png" alt="emoji livro">
+            </div>
+        </div>
+    </section>
+
+    <section id="cards-repos"></section>
+
+    <footer>
+        <div id="footer">
+            <p id="paragrafo"> Desenvolvido por</p>
+            <p id="devs"> Valenthina Temudo e Ana Claudia Gaspar</p>
+        </div>
+    </footer>
 </body>
 
 </html>
