@@ -59,7 +59,7 @@
             .catch(error => console.log(error))
 
         const cardsRepo = document.querySelector("#cards-repos")
-        
+        cardsRepo.innerHTML = "";
 
         if (dadosRepo && dadosRepo.length == 0) {
             //criar a mensagem de repositório vazio e exibir aqui
@@ -85,6 +85,7 @@
                 const divContainer = document.createElement('div');
                 divContainer.className = 'container'
 
+
                 //criando h1
                 const tituloRepo = document.createElement('h1')
                 tituloRepo.className = 'titulo-repo';
@@ -99,12 +100,23 @@
                 pDescricao.appendChild(descricao);
                 divContainer.appendChild(pDescricao);
 
+                // criando div linguagem e estrela
+                const divP = document.createElement('div')
+                divP.className = 'div-linguagem-estrela'
+
+                // criando div bolinha linguagem
+                // const divBolinha = document.createElement('div');
+                // divBolinha.className = 'divB';
+
                 // criando paragrafo linguagem
                 const pLinguage = document.createElement('p');
                 pLinguage.className = 'pLinguagem';
                 let linguagem = document.createTextNode(item.language);
                 pLinguage.appendChild(linguagem);
                 divContainer.appendChild(pLinguage);
+                divP.appendChild(pLinguage);
+                // divBolinha.appendChild(pLinguage);
+
 
                 //criando paragrafo estrela
                 const pEstrela = document.createElement('p');
@@ -112,8 +124,11 @@
                 let estrela = document.createTextNode(item.stargazers_count);
                 pEstrela.appendChild(estrela);
                 divContainer.appendChild(pEstrela);
+                divP.appendChild(pEstrela);
 
                 // adicionar container ao card
+                // divContainer.appendChild(divBolinha);
+                divContainer.appendChild(divP);
                 divCard.appendChild(divContainer);
                 cardsRepo.appendChild(divCard)
             })
