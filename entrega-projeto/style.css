@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', Bold;
+}
+
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 > span{
+    color: #EC9B69;
+}
+
+header{
+    height: 60px;
+    padding: 0 1rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#username{
+    /*margin: 13px 69px 11px 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 11px;
+    width: 403px;
+    height: 42px;
+    background: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 200px 9px;
+    border: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    border-radius: 8px;*/
+    /*background-image: url(./search_black_24dp.svg);*/
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+#username:focus{
+    outline: none;
+}
+
+#search{
+    width: 192px;
+    height: 28px;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #bebebe;
+    border-radius: 8px;
+}
+
+#botao{
+    margin-right: 5em;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.material-icons-outlined{
+    font-family: 'Material Icons';
+    font-size: 22px;
+}
+
+#sessao_usuario{
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;*/
+}
+
+#imagem{
+    width: 207px;
+    height: 50px;
+    /*margin: 13px 720px 13px 13px;*/
+}
+
+.imagem_usuario{
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#nome_usuario{
+    /*margin: 12.66px 0px 0px 0px; 
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: 0;
+    padding: 0;
+    font-weight: Bold;
+    font-size: 32px;
+    height: 40px;*/
+    color: #EC9B69;
+    font-weight: 700;
+}
+
+#login_usuario{
+    font-weight: bold;
+    font-size: 14px;
+    color: #313131;
+    
+}
+
+#infos{
+    margin: 36px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #313131;
+}
+
+#repositorio{
+    margin: 12px 0px 0px 0px;
+}
+
+#footer{
+    background-color: #ffffff;
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    font-weight: 800;
+    color: #EC9B69;
+}
+
+#reprograma{
+    text-decoration: none;
+    font-weight: 600;
+    color: #a639f0;
+}
