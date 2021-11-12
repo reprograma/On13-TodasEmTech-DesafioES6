@@ -10,23 +10,27 @@
 </head>
 
 <body>
-    <div id="cabecalho">
-        <img id="id-logo" src="./imagens/GithubSearch.svg" alt="logo github search">
-
-        <form id="form-busca" action="#">
-            <input id="input-usuario" type="text" placeholder="Search.." name="search">
-            <button id="btn" type="submit"><img id="lupa" src="./../../images/outline_search_black_24dp.png"
-                    alt=""></button>
-        </form>
-    </div>
+    <header id="header">
+        <img id="id-logo" src="./imagens/GithubSearch.svg" alt="">
+        <section id="input-busca" action="#">
+            <form id="form-usuario">
+                <input id="input-usuario" type="text" placeholder="Digite o usuário.." name="search">
+                <button id="btn" type="submit"><img id="img-btn" src="./../../images/outline_search_black_24dp.png"
+                        alt="foto lupa"></button>
+            </form>
+        </section>
+    </header>
     <div>
         <h1>Usuário não encontrado :(</h1>
         <p>Pesquise Novamente</p>
     </div>
-    <div>
+    <div id="imgE">
         <img id="img-erro" src="./../../images/notfound.png" alt="notfound">
     </div>
-
+    <footer>
+      <div id="p-footer">Desenvolvido por</div>
+      <div class="p-footer">Valenthina Temudo e Ana Claudia Gaspar</div>
+    </footer>
 </body>
 
 </html>

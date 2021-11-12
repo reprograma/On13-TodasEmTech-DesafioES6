@@ -6,7 +6,7 @@
 
     #header {
         position: absolute;
-        width: 1500px;
+        width: 100%;
         height: 66px;
         left: 0px;
         top: 0px;
@@ -32,7 +32,7 @@
         border-radius: 8px;
     }
 
-    #form-usuario {
+    #form-busca {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -522,15 +522,11 @@
         height: auto;
     }
 
-    .divB {}
-
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
-        width: 1500px;
+        width: 100%;
         height: 66px;
-        left: 0px;
-        top: 958px;
         background: #FFFFFF;
         display: flex;
         justify-content: center;

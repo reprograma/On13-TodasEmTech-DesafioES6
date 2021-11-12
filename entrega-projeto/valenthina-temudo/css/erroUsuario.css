@@ -1,21 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
-    div {
+    #imgE {
         text-align: center;
     }
 
     body {
         background-color: #E5E5E5;
-    }
-
-    #cabecalho {
-        position: absolute;
-        width: 100%;
-        height: 66px;
-        left: 0px;
-        top: 0px;
-
-        background: #FFFFFF;
     }
 
     #id-logo {
@@ -31,8 +21,16 @@
         line-height: 40px;
         color: #EC9B69;
     }
+    #header {
+        position: absolute;
+        width: 100%;
+        height: 66px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+    }
 
-    #form-busca {
+    #input-busca {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -40,7 +38,7 @@
         padding: 12px 11px;
 
         position: absolute;
-        width: 300px;
+        width: 280px;
         height: 42px;
         left: 968px;
         top: 13px;
@@ -51,41 +49,68 @@
         border-radius: 8px;
     }
 
+    #form-busca {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 377px;
+        height: 18px;
+        left: 11px;
+        top: 12px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+
     #input-usuario {
         position: static;
         width: 200px;
-        height: 15px;
+        height: 18px;
+        left: 0px;
+        top: 0px;
 
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
+        border: none;
 
         color: #313131;
 
         opacity: 0.5;
 
+        flex: none;
+        order: 0;
+        flex-grow: 0;
         margin: 0px 8px;
     }
 
     #btn {
-        position: absolute;
-        width: 20px;
-        left: 228px;
-        padding: 5px;
+        position: static;
+        width: 10px;
+        height: 18px;
+        left: 359px;
+        top: 0px;
+        background: #FFFFFF;
+        border: none;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
 
+    #img-btn {
+        font-family: Material Icons;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        background-color: #ffffff;
-        border: none;
-    }
-
-    #lupa {
-        position: absolute;
-        width: 25px;
-        left: 0px;
+        height: 18px;
     }
 
     h1 {
@@ -127,3 +152,30 @@
 
         opacity: 0.5;
     }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 66px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #p-footer {
+        color: #313131;
+        opacity: 0.5;
+    }
+
+    .p-footer {
+        color: #EC9B69;
+        margin-left: 5px;
+    }
+    
