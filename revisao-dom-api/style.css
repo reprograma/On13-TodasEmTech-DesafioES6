@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+#card-pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+}
+#img-pokemon{
+    max-width: 350px;
+    display: block;
+}
+#nome-pokemon{
+    font-size: 18px;
+    font-weight: bold;
+}
