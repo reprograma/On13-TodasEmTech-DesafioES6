@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 > span {
+  color: #ec9b69;
+}
+
+#imagem {
+  width: 207px;
+  height: 50px;
+}
+
+header {
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1em;
+  align-items: center;
+}
+
+#username {
+  border-radius: 8px;
+  width: 200px;
+  height: 25px;
+  padding-left: 10px;
+  border: none;
+}
+
+#username:focus {
+  outline: none;
+}
+
+#search {
+  margin-right: 1em;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  width: 225px;
+  height: 28px;
+}
+
+#botao {
+  background-color: #ffffff;
+  border: none;
+  margin-right: 5em;
+  cursor: pointer;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons";
+  font-size: 22px;
+}
+
+#sessao_usuario {
+  margin: auto;
+}
+
+.imagem_usuario {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nome_usuario {
+  color: #ec9b69;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.username_usuario {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #313131;
+  opacity: 50%;
+}
+
+.biografia_usuario {
+  font-size: 14px;
+  font-weight: 400;
+  color: #313131;
+  opacity: 50%;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.icone_usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  padding-right: 0.5rem;
+  padding: 0.2rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: #c6c6c6;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.icon__profile {
+  color: #ec9b69;
+  margin: 0;
+  margin-right: 0.3rem;
+  padding: 0;
+}
+
+.erro {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mensagem_de_erro {
+  width: 450px;
+  padding: 0;
+  margin: 0;
+}
+
+#seguidores,
+#repos {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ec9b69;
+}
+
+#reprograma{
+  font-weight: 700;
+  color: #7E459B;
+}
+
+footer {
+  background-color: #ffffff;
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+}
