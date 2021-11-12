@@ -1,10 +1,14 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,3 +16,129 @@
   padding: 1em;
 }
 
+body{
+  background-color: #E5E5E5;
+}
+
+.user-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.card-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5px;
+  gap: 10px;
+
+}
+
+.foto-perfil {
+  width: 252px;
+  height: 254, 66px;
+  border-radius: 10px;
+
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-notfound {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box--notfound {
+  width: 80%;
+  height: 95%;
+}
+
+.notfound-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #EC9B69;
+  text-align: center;
+  padding: 20px;
+}
+
+.box-notfound--text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #313131;
+  text-align: center;
+
+}
+
+.imagem-notfound {
+  width: 628px;
+  height: 720px;
+  margin: -130px 231px;
+}
+
+.input{
+  width: 403px;
+  height: 42px;
+  left: 968px;
+  top: 13px;
+  background: #FFFFFF;
+  border: 1px solid #BEBEBE;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+placeholder{
+  position: static;
+  width: 351px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  color: #313131;
+  opacity: 0.5;
+
+}
+
+.name{
+  width: 202px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  /*font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;*/
+
+color: #EC9B69;
+}
+.username{
+  position: static;
+  left: 50%;
+  right: 0%;
+  top: 68.75%;
+  bottom: 31.25%;
+
+  /*font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;*/
+
+  color: #313131;
+
+  opacity: 0.5;
+  }

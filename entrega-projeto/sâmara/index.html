@@ -10,33 +10,42 @@
 <body>
   <header class="nav">
     <img src="GithubSearch.png" alt="Imagem com texto escrito GithubSearch">
-    <input type="search" placeholder="Digite o nome do usuário">
-
+    <input type="text" placeholder="Digite o nome do usuário" class="input">
+    <button class="botao"> Procurar </button>
+  
   </header>
   <div class="user-info">
     <div class="card-user">
-      <img src="" alt="">
-
-      <h1 class="name" id="name">Samara</h1>
-
-      <h2 class="username" id="username">snalbuquerque</h2>
-
-      <p class="description" id="description">front-end developer</p>
+      <img src="#"  alt="" class="foto-perfil" />
+  
+      <h1 class="name" id="name"></h1>
+  
+      <h2 class="username" id="username"></h2>
+  
+      <p class="description" id="description"></p>
     </div>
     <div class="card-icons">
-      <div>
-        <img src="people_outline.png" alt="ícone de pessoas">
-        <p></p>
-
-      </div>
-      <div>
-
-        <img src="Vector.png" alt="ícone de livro com marcador">
-        <p></p>
-      </div>
+  
+      <img src="/images/people_outline.png" alt="ícone de pessoas" />
+      <p class="seguidores"></p>
+      <img src="/images/Vector.png" alt="ícone de livro com marcador" />
+      <p class="repositorios"></p>
+  
     </div>
-      
-
+  
   </div>
+  <section class="container-notfound">
+    <div class="container-box--notfound">
+      <h1 class="notfound-text">Usuário não encontrado :(</h1>
+      <h2 class="box-notfound--text">Pesquise novamente!</h2>
+      <img
+        class="imagem-notfound"
+        src="/images/not-found.svg"
+        alt="Imagem informando que não foi encontrado o usuario"
+      />
+    </div>
+  </section>
+  <script src="script.js"></script>
+  
 </body>
 </html>
