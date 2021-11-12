@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.logo {
+    width: 207px;
+    margin: 1rem;
+}
+
+.btn-lupa {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 12px 20px;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+}
+
+.input-container {
+    position: relative;
+}
+
+#input-user {
+    width: 403px;
+    height: 42px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 11px;
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 16px 11px;
+    transition: .3s;
+}
+
+#user-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 892px;
+    
+}
+.user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 252px;
+    height: 400px;
+}
+
+#img-user {
+    width: 252px;
+    height: 255px;
+    border-radius: 8px;
+}
+
+#name-user {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #EC9B69;
+    padding-top: 0.8rem;
+}
+
+#nickname-user {
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 17px;
+    height: 40px;
+    color: #313131;
+    opacity: 0.5;
+    padding-top: 0.25rem;
+}
+
+#bio-user {
+    font-size: 0.9rem;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+    padding: 1rem 0;
+}
+
+.info-numbers {
+    display: flex;
+}
+
+.followers-card {
+    padding: 4px;
+    width: 66px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 0.5rem 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#followers-img, #repository-img {
+    padding: 0.5rem;
+}
+
+#followers-user, #repository-user {
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.footer {
+    width: 100%;
+    height: 66px;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 22px;
+}
+
+.developers {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EC9B69;
+}
+
