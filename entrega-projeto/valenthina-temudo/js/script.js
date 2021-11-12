@@ -52,15 +52,16 @@
         repoUsuario.textContent = user.public_repos;
     }
 
-    function buscarRepoUsuario(urlApiRepo, nomeUsuario) {
-        const dadosRepo = fetch(urlApiRepo)
+   async function buscarRepoUsuario(urlApiRepo, nomeUsuario) {
+        const dadosRepo = await fetch(urlApiRepo)
             .then(response => response.json())
             .then(dados => dados)
             .catch(error => console.log(error))
 
-        const cardsRepo = document.querySelector("#card-repos")
+        const cardsRepo = document.querySelector("#cards-repos")
+        
 
-        if (dadosRepo && dadosRepo.lenght == 0) {
+        if (dadosRepo && dadosRepo.length == 0) {
             //criar a mensagem de repositório vazio e exibir aqui
             const mensagem = nomeUsuario + " não tem repositórios públicos ainda";
             const paragrafoMensagem = document.createElement('p');
@@ -77,8 +78,8 @@
             dadosRepo.map((item) => {
 
                 // //criando a divCard
-                // const divCard = document.createElement('div')
-                // divCard.className = 'card';
+                const divCard = document.createElement('div')
+                divCard.className = 'card';
 
                 //criando a div container
                 const divContainer = document.createElement('div');
@@ -113,8 +114,8 @@
                 divContainer.appendChild(pEstrela);
 
                 // adicionar container ao card
-                // divCard.appendChild(divContainer);
-                cardsRepo.appendChild(divContainer)
+                divCard.appendChild(divContainer);
+                cardsRepo.appendChild(divCard)
             })
         }
     }

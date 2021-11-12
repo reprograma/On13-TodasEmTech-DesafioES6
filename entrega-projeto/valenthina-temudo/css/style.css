@@ -362,7 +362,7 @@
         margin: 0px 8px;
     }
 
-    #cards-repo {
+    #cards-repos {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -375,28 +375,26 @@
         top: 179px;
     }
 
-    .mensagem {
-        position: absolute;
-        left: 42.57%;
-        right: 21.88%;
-        top: 27.34%;
-        bottom: 69.73%;
-
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-
+    .card {
         display: flex;
-        align-items: center;
-        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
 
-        color: #313131;
+        position: static;
+        width: 442px;
+        height: 688px;
+        left: 474px;
+        top: 0px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 32px;
     }
 
     .container {
-        /* position: static;
+        position: static;
         width: 442px;
         height: 148px;
         left: 0px;
@@ -405,164 +403,38 @@
         flex: none;
         order: 3;
         flex-grow: 0;
-        margin: 32px 0px; */
-
-        position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #FFFFFF;
-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
-border-radius: 8px;
+        margin: 32px 0px;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
     }
 
     .titulo-repo {
         position: static;
-left: 0%;
-right: 59.95%;
-top: 0%;
-bottom: 54.55%;
+        left: 0%;
+        right: 59.95%;
+        top: 0%;
+        bottom: 54.55%;
 
-font-family: Quicksand;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
 
-color: #313131;
+        color: #313131;
 
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 8px 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
     }
 
     .pDescricao {
         position: static;
-left: 0%;
-right: 0%;
-top: 59.09%;
-bottom: 0%;
-
-font-family: Quicksand;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-
-color: #313131;
-
-opacity: 0.5;
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 8px 0px;
-    }
-
-    .pEstrela {
-        position: static;
-left: 55%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-font-family: Quicksand;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-display: flex;
-align-items: center;
-
-color: #313131;
-
-opacity: 0.5;
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 4px;
-    }
-
-    .pLinguagem {
-        position: static;
-left: 20.41%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-font-family: Quicksand;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 12px;
-display: flex;
-align-items: center;
-
-color: #313131;
-
-opacity: 0.5;
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 8px;
-    }
-
-
-
-    footer {
-        position: absolute;
-        width: 1440px;
-        height: 66px;
-        left: 0px;
-        top: 958px;
-        align-items: center;
-
-        background: #FFFFFF;
-        display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 209px;
-height: 24px;
-left: 572px;
-top: 980px;
-    }
-
-    /* #footer {
-        display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 209px;
-height: 24px;
-left: 572px;
-top: 980px;
-
-    } */
-
-    #paragrafo {
-        position: static;
         left: 0%;
-        right: 45.93%;
-        top: 0%;
+        right: 0%;
+        top: 59.09%;
         bottom: 0%;
 
         font-family: Quicksand;
@@ -576,25 +448,54 @@ top: 980px;
         opacity: 0.5;
 
         flex: none;
-        order: 0;
+        order: 1;
         flex-grow: 0;
-        margin: 0px 4px;
+        margin: 8px 0px;
     }
 
-    #devs {
+    .pLinguagem {
         position: static;
-        left: 55.98%;
+        left: 20.41%;
         right: 0%;
         top: 0%;
         bottom: 0%;
 
         font-family: Quicksand;
         font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
 
-        color: #EC9B69;
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    .pEstrela {
+        position: static;
+        left: 55%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
 
         flex: none;
         order: 1;
