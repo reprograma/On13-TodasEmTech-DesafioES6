@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer type="text/javascript"></script>
+  </head>
+  <body>
+    <nav id="menuNavegacao">
+      <h1 class="tituloNavegacao">
+        Github<span class="logotype">Search</span>
+      </h1>
+      <div class="searchContainer">
+        <input
+          name="inputUsuario"
+          id="inputUsuario"
+          placeholder="Digite o usuário"
+          type="text"
+        />
+        <button
+          id="buscaUsuario"
+          type="button"
+          onclick="searchGithubByUsername();"
+        >
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="profile" id="profile"></section>
+      <section class="error" id="error"></section>
+    </main>
+    <footer>
+      <p class="textoFooter">
+        Desenvolvido por
+        <span class="textoFooter orangeText"
+          >Ana Carolina Zago & Valentina Hastenreiter Moraes</span
+        >
+      </p>
+    </footer>
+  </body>
+</html>

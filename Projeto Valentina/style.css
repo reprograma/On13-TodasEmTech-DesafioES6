@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap');
+
+* {
+  font-size: 65%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: Quicksand;
+  background-color: #e5e5e5;
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+
+#container {
+  align-items: center;
+  justify-content: center;
+}
+
+#menuNavegacao {
+  width: 100%;
+  height: 66px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menuNavegacao .searchContainer button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  right: 35px;
+  background: #fff;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.tituloNavegacao {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ec9b69;
+  margin-left: 20px;
+}
+
+.logotype {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: black;
+}
+
+#inputUsuario {
+  padding: 12px 11px;
+  width: 403px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #bebebe;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.profile {
+  margin: 200px auto;
+  width: 350px;
+}
+
+.profile img {
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+}
+
+.profile h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ec9b69;
+  margin: 10px 0;
+}
+
+.profile .username {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  margin: 5px 0;
+}
+
+.profile .bio {
+  font-size: 18px;
+  color: #444;
+}
+
+.profile .stats {
+  margin: 20px 0;
+}
+
+.profile .stats span {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.profile .stats span:first-child {
+  margin-right: 10px;
+}
+
+.profile .stats span i {
+  color: #ec9b69;
+  height: 30px;
+  width: 30px;
+}
+
+footer {
+  height: 66px;
+  background-color: #ffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoFooter {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.orangeText {
+  color: #ec9b69;
+}
+
+.error {
+  margin: 200px auto;
+  text-align: center;
+}
+
+.errorContainer .errorTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 60px;
+  color: #ec9b69;
+}
+
+.errorContainer .errorDescription {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+  color: #313131;
+}
