@@ -1,42 +1,50 @@
 const profile = document.getElementById('profile')
-const error = document.getElementById('error')
+const errorSection = document.getElementById('error')
 
-const searchGithubByUsername = async () => {
-  const baseUrl = 'https://api.github.com'
-  const githubUsername = validateSearchInput()
+// Armazenamos as duas sections em variáveis para podermos usar para manipular o DOM
+
+const searchGithubByUsername = async () => {  
+
+  const baseUrl = 'https://api.github.com' // variável que armazena o endereço da API
+  const githubUsername = validateSearchInput() // variável que armazena o resultado da função de validação o termo procurado no input
 
   try {
-    clearError()
+    clearError() // limpamos o erro antes de fazer uma nova requisição
 
-    const response = await fetch(`${baseUrl}/users/${githubUsername}`)
-    const data = await response.json()
+    const response = await fetch(`${baseUrl}/users/${githubUsername}`) // requisição usando o try/catch e async/await para buscar os dados do perfil do Github
+    const data = await response.json() // transforma a respota em json para um objeto js
 
-    if (data.message === 'Not Found') {
+    if (data.message === 'Not Found') { //verifica se o objeto tem uma propriedade de erro
       clearProfile()
-      clearSearchInput()
       userNotFound()
     } else {
-      showGithubProfile(data)
-      clearSearchInput()
+      showGithubProfile(data) //sucesso, mostrar o perfil no Github, usando os dados da resposta (const data)
     }
+
+    clearSearchInput() // limpa o input de busca em caso de uma nova busca
+
   } catch (error) {
-    console.error(error)
+    console.error(error) // em caso de erro, faz um log do erro no console
   }
 }
 
-const clearProfile = () => {
-  profile.replaceChildren()
+// a função limpa o perfil em caso de uma nova busca
+const clearProfile = () => { 
+  profile.replaceChildren() // repõe os filhos 
 }
 
+// em caso de uma nova pesquisa, se o erro estiver na tela, ele será substituído por um resultado caso positivo
 const clearError = () => {
-  error.replaceChildren()
+  errorSection.replaceChildren()
 }
 
+// essa função limpa o input logo após o click
 const clearSearchInput = () => {
   const searchInput = document.getElementById('inputUsuario')
   searchInput.value = ''
 }
 
+// valida o campo, caso ele tenha espaços em branco e letras maiúsculas
 const validateSearchInput = () => {
   const githubUsername = document
     .querySelector('#inputUsuario')
@@ -45,6 +53,7 @@ const validateSearchInput = () => {
   return githubUsername
 }
 
+// essa função cria os elementos HTML e Estilos da página de erro e insere esses elementos no DOM
 const userNotFound = () => {
   const errorContainer = document.createElement('div')
   errorContainer.setAttribute('class', 'errorContainer')
@@ -60,15 +69,15 @@ const userNotFound = () => {
   const errorImage = document.createElement('img')
   errorImage.setAttribute('src', './img/notfound.png')
 
-  const errorElements = [errorTitle, errorDescription, errorImage]
-  errorElements.forEach(element => errorContainer.appendChild(element))
+  const errorElements = [errorTitle, errorDescription, errorImage] // agrupa todas variáveis criadas num array
+  errorElements.forEach(element => errorContainer.appendChild(element)) // executa a função appendChild em cada elemento da array
 
-  error.appendChild(errorContainer)
+  errorSection.appendChild(errorContainer) // transforma em filhas todas as variáveis, dentro da section em caso de erro
 }
 
 const showGithubProfile = profileData => {
   clearProfile()
-  const { avatar_url, name, login, bio, followers, public_repos } = profileData
+  const { avatar_url, name, login, bio, followers, public_repos } = profileData // usando a desestruturação para selecionar apenas as propriedades que vamos usar 
 
   const avatar = document.createElement('img')
   avatar.setAttribute('src', avatar_url)
@@ -94,7 +103,7 @@ const showGithubProfile = profileData => {
   const followersCount = document.createElement('span')
   followersCount.innerHTML = followers
   const followersItem = [followersIcon, followersCount]
-  followersItem.forEach(element => followersSpan.appendChild(element))
+  followersItem.forEach(element => followersSpan.appendChild(element))  
 
   const reposSpan = document.createElement('span')
   const reposIcon = document.createElement('i')
@@ -107,6 +116,6 @@ const showGithubProfile = profileData => {
   const statsItem = [followersSpan, reposSpan]
   statsItem.forEach(element => stats.appendChild(element))
 
-  const elements = [avatar, title, username, profileBio, stats]
-  elements.forEach(element => profile.appendChild(element))
+  const profileElements = [avatar, title, username, profileBio, stats]
+  profileElements.forEach(element => profile.appendChild(element))
 }
