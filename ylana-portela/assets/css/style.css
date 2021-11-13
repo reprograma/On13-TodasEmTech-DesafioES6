@@ -55,11 +55,9 @@ input{
     border: 1px solid #BEBEBE;
     border-radius: 8px;
     outline: none;
+    text-indent: 10px;
 }
 
-::placeholder{
-    padding-left: 11px;
-}
 
 .image-lupa{
     width: 20px;
@@ -90,6 +88,44 @@ section{
     border-radius: 8px;
 }
 
+.user-name{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #EC9B69;
+}
+
+.user-username{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.user-description{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.user-visibility{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-;
+    align-content: center;
+}
+
+.followers, .repositories{
+    width: 66px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding-top: 10px;
+}
 
 /* div error */
 .error{
