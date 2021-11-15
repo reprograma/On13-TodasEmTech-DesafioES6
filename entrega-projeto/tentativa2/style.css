@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+header{
+    max-width: 100%;
+    height: 9%;
+    padding: 2px 40px;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    max-height: 6vh;
+}
+ul li:first-child{
+    display: flex;
+    align-items: center;
+}
+.logo-image{
+    width: auto;
+    height: 70%;
+}
+input{
+    width: 413px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    border-radius: 8px;
+    outline: none;
+    text-indent: 10px;
+}
+
+
+.image-lupa{
+    width: 20px;
+    position: relative;
+    right: 37px;
+    transform: rotate(270deg);
+}
+
+
+section{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+.informations{
+    width: 18%;
+    display: none;
+}
+.user-image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.user-name{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #EC9B69;
+}
+
+.user-username{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.user-description{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+}
+
+.user-visibility{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.followers, .repositories{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4px;
+    margin-left: 5px;
+    width: 66px;
+    height: 40px;
+    left: 74px;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+}
+
+.followers-texto{
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+
+.error{    
+    min-height: 50%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+.error-title{
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 60px;
+    color: #EC9B69;
+}
+.error-par{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 60px;
+    color: #313131;
+    opacity: 0.5;
+}
+.error-image{
+    width: 90%;
+    height: 56%;
+}
+
+
+footer{
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+p{
+    font-size: 14px;
+    color: #313131;
+    
+}
+a{
+    color: #EC9B69;
+    text-decoration: none;
+}
