@@ -1,8 +1,3 @@
-
-
-
-
-
 const nomeGitHub = document.getElementById("nome-usuario");
 const imgPerfil = document.getElementById("img-usuario");
 const nomeP = document.getElementById("apelido-usuario");
@@ -13,6 +8,9 @@ const imgSegui =document.getElementById("img-seguidores");
 const numeroDeSeguidores =document.getElementById("seguidores-usuario");
 const imgRepositorio =document.getElementById("repositorio-img");
 const numeroDeUsuarios =document.getElementById("repositorio-usuario");
+const titleError = document.getElementById("title-error");
+const textError = document.getElementById("text-error");
+const imgError = document.getElementById("img-error");
 
 
 
@@ -22,13 +20,18 @@ const baseURL = "https://api.github.com/users"
     evento.preventDefault();
     let meuGit = input.value.trim().toLowerCase();
 
+    const result = await fetch(`${baseURL}/${meuGit}`);
+    const data = await result.json();
+    console.log(data);
+
       const hubFetch = await fetch(`${baseURL}/${meuGit}`)
         .then(response => response.json())
         .then(dados => dados)
         .catch(err => meuErro())
 
         pegaUsuarioGitHub( hubFetch)
-        validarInput();
+         validarInput();
+  
        
  }
 
@@ -37,20 +40,20 @@ const baseURL = "https://api.github.com/users"
     nomeP.textContent = giti.login;
     imgPerfil.setAttribute("src", giti.avatar_url);
     biografia.textContent= giti.bio;
-    // imgSegui.setAttribute("src", giti.followers_url);
+    imgSegui.src ='../img/people_outline.png'
     numeroDeSeguidores.textContent = giti.followers;
     numeroDeUsuarios.textContent = giti.following;
-    // imgRepositorio.setAttribute("src", giti.following_url);
+    imgRepositorio.src = '../img/Vector.png';
+    
    
     // console.log(pegaUsuarioGitHub)
  }  
  
- 
-
- 
 
 const validarInput = () => {
     input.value = ""
+
+    
 }
 const meuErro = () => {
     const divErro = document.createElement("div");
@@ -59,9 +62,43 @@ const meuErro = () => {
     textoErro.textContent = "Página não encontrada"
     divContainer.appendChild(divErro) 
     document.body.appendChild(divErro);
+}
+    
+
+
+    form.addEventListener("submit", eventoFormulario)
+
 
     
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+// }
 
 // const meuErro = () => {
 //     const divErro = document.createElement("div"); 
@@ -71,7 +108,7 @@ const meuErro = () => {
 
 
 
-form.addEventListener("submit", eventoFormulario)
+
 //console.log(eventoFormulario)
 
 

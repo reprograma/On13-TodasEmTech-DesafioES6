@@ -50,21 +50,18 @@ form button:hover{
     padding: 0;
     
 }
+
+
+
 /* usuario */
-.container{
-    display: flex;
-    
-}
+
 .secao-usuario{
     display: flex;
-    text-align: center;
-    justify-content: center;
-    
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+   justify-content: center;
+   align-content: center;
     background-color: #E5E5E5;
-    height: 892px;
-    /* margin-left: 500px; */
+    height: 430px;
     flex-wrap: wrap;
 }
 #img-usuario{
@@ -77,10 +74,15 @@ form button:hover{
     font-size: 1.2em;
     line-height: 2.5em;
     color: #EC9B69;
+    text-align: left;
+    font-size: 1.3em;
     
 }
 #apelido-usuario{
 display: flex;
+font-weight: bold;
+color: #313131;
+font-size: 1.2em;
 }
     
 #bio-usuario{
@@ -89,10 +91,19 @@ display: flex;
     color: #313131;
     opacity: 0.5;
     padding: 1rem 0;
+    flex: none;
+    width:200px;
+   
 } 
 
 .caixas-cards{
-    background-color: aqua;
+    display: flex;
+
+    /* background-color: #FFFFFF;
+    width: 40px;
+    border-radius: 8px; */
+
+   
 }
 #seguidores-card{
     padding: 4px;
@@ -107,6 +118,7 @@ display: flex;
 }
 #img-seguidores{
     padding: 0.5rem;
+   
 }
 #seguidores-usuario{
     font-weight: bold;
@@ -133,29 +145,19 @@ display: flex;
     opacity: 0.5;
 }
 
-
-
-
-
-
-
-
-
-
-
- 
-
- /* footer{
-    width: 100%;
+footer{
     display: flex;
-    bottom: 0;
-    position: absolute;
     color: black;
     text-align:justify;
     justify-content: center;
-    padding: 10px;
+    padding: .10em;
     background-color: #FFFFFF; 
   }
   .s2 {
     color: rgb(196, 26, 26);
-  }  */
+  }  
+  .name-footer{
+    color: #EC9B69;
+  }
+
+  
