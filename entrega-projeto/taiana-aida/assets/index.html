@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>API project</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="../../../images/github.png" id="logo">
+        <form id="form">
+            <input id="search" type="text" placeholder="Digite o usuário..." >
+            <button type="submit" id="buscar" class="closing"><img id="lupa" src="../../../images/outline_search_black_24dp.png" /></button>
+        </form>
+    </nav>
+
+    <section id="card-user">
+
+        <img id="img-user" src="" alt="" />
+
+        <div class="text-box">
+            <h1 id="name-user"></h1>
+            <p id="nick-name"></p>
+            <p id="bio"></p>
+        </div>
+
+        <div class="icons"> 
+            <div class="box-icon">
+                <img class="icon" src="../../../images/people_outline.png">
+                <span id="followers"></span>
+            </div>
+
+            <div class="box-icon">
+                <img class="icon" src="../../../images/Vector.png">
+                <span id="projects"></span>
+            </div>
+
+        </div>
+
+        <div class="button-repo"> 
+            <button id="see-repos" type="submit">Ver Repositórios</button>
+        </div>
+
+    </section>  
+
+    <section id="no-user">
+        <h1 id="no-user_title">Usuário não encontrado :(</h1>
+        <p id="no-user_sub">Pesquise novamente </p>
+        <img id="frame" src="../../../images/Frame.png">
+    </section>
+
+    <section id="all-repos">
+        <div class="first-box"> 
+
+            <img id="userImg" src="" alt="" />
+
+            <div class="text-box">
+                <h1 id="userName"></h1>
+                <p id="nickName"></p>
+                <p id="biografy"></p>
+            </div>
+
+            <div class="icons"> 
+                <div class="box-icon">
+                    <img class="icon" src="../../../images/people_outline.png">
+                    <span id="follow"></span>
+                </div>
+
+                <div class="box-icon">
+                    <img class="icon" src="../../../images/WhatsApp Image 2021-11-06 at 2.05.55 PM (1).jpeg">
+                    <span id="proj"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-box">
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <p> Desenvolvido por <span class="authors">Aida Figueiredo</span> e <span class="authors"><Taiana>Taiana Aguilera</span> <strong>&#169;</strong> </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
