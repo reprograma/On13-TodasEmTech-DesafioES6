@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img class="img-git-search" src="../img/GithubSearch.png" alt="">
+        </div>
+
+        <form id="formulario" action="#" method="post">
+            <input type="text" nome="search" id="search" placeholder="Digite o usuário" required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <section class="container">
+        <div class="secao-usuario">
+            <img id="img-usuario" src="" alt="">
+            <h3 id="nome-usuario"></h3>
+            <p id="apelido-usuario"></p>
+            <p id="bio-usuario"></p>
+
+            <div class="caixas-cards">
+                <div class="seguidores-card">
+                    <img id="img-seguidores" src="" alt="">
+                    <p id="seguidores-usuario"></p>
+                </div>
+
+                <div class="seguidores-card">
+                    <img id="repositorio-img" src="" alt="">
+                    <p id="repositorio-usuario"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2 id="title-error"></h2>
+        <p id="text-error"></p>
+        <img id="img-error" />
+    </section>
+    <section id="public-repos">
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+<footer>
+    <p> <strong> <a class="s2">❤</a> Site desenvolvido pela alunas <strong class="name-footer"> Isabella Brandão e Márcia Tadakuma </strong> {Reprograma} <a
+                class="s2">❤</a> | © Copyright 2021 </strong></p>
+</footer>
+
+
+
+
+</html>
+
+
+

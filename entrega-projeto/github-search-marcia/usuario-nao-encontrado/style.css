@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 10px;
+    
+   
+}
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #FFFFFF;
+padding: 1em;
+
+
+}
+form{
+    border: 1px solid #cac7c7;
+    border-radius: 0.3em;
+    padding: 0.3em;
+
+}
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 0.2em;
+     border: none; 
+    padding: 0.2em;
+    
+
+}
+form input{
+    color: #0f0e0e;
+  
+}
+form button{
+    cursor: pointer;
+    background:none;
+}
+
+form button:hover{
+    background-color: #E5E5E5;
+
+}
+.img-git-search{
+    width: 15em;
+    padding: 0;
+    
+}
+
+
+.titulo, .subtitulo {
+    text-align: center;
+}
+.titulo{
+     color:#EC9B69 ;   
+     font-size: 3em;
+     
+}
+.subtitulo{
+    color: #313131;
+    font-size: 2em;
+}
+.caixa{
+    background-color: #E5E5E5;
+    display: flex;
+   padding: auto;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.img-fundo{
+    display: flex;
+    width: 50%;
+    left: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+ footer{
+    width: 100%;
+    display: flex;
+   
+    position: absolute;
+    color: black;
+    text-align:justify;
+    justify-content: center;
+    padding: 10px;
+    background-color: #FFFFFF; 
+  }
+  .s2 {
+    color: rgb(196, 26, 26);
+  } 
