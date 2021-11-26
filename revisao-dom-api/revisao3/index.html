@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #caixa-mae {
+            background-color: red;
+            width: 900px;
+            height: 500px;
+            display: flex; 
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .repo-filha {
+            background-color: yellow;
+            color: blue;
+            font-size: 32px;
+            width: 200px;
+            height: 100px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+<body>
+    <header></header>
+    <section id="caixa-da-fotinho-com-nome">
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+        <p></p>
+        <div>
+            <img src="./imagens/people_outline.png" alt="pessoas que eu sigo" />
+            <p id="seguidores-text"></p>
+        </div>
+        <div>
+            <img src="" alt="" />
+            <p></p>
+        </div>
+    </section>
+    <section id="caixa-mae"></section>
+    
+
+
+
+
+
+
+    <script type="text/javascript">
+        const caixaMae = document.querySelector("#caixa-mae"); 
+        const caixaUsuaria = document.querySelector("#caixa-da-fotinho-com-nome"); 
+        const followersText = document.querySelector("#seguidores-text"); 
+
+        const repositorios = ["1",2,3,4,5,6,7,8,9]; 
+
+        const baseURL = "https://api.github.com"
+
+        const funcaoDaUsuaria = async () => {
+            const nomeDaPessoa = "";
+         
+            const respostaDaAPI = await fetch(`${baseURL}/users/${nomeDaPessoa}`)
+            .then(response =>  response.json())      
+            .catch((err) => {
+                const erro = document.createElement('p');
+                erro.textContent = "Não achei a usuária :("
+                caixaMae.appendChild(erro);
+                console.log(err)
+                
+            } )
+            console.log(respostaDaAPI)
+            
+            followersText = respostaDaAPI.seguidores
+
+
+        }
+        funcaoDaUsuaria()
+
+        repositorios.map((elemento,indice,array)=> {
+            const repositorio = document.createElement("div");
+            repositorio.textContent = elemento; 
+            repositorio.classList.add("repo-filha");
+            caixaMae.appendChild(repositorio);
+        })
+
+    </script>
+</body>
+</html>
