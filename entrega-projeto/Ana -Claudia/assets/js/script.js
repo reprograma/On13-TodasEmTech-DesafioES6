@@ -1,6 +1,6 @@
 const input = document.getElementById("input-usuario");
 const botao = document.getElementById("btn");
-const formulario = document.getElementById("form-usuario");
+const formulario = document.querySelector("#form-usuario");
 
 const card = document.getElementById("card-usuario");
 const imgUsuario = document.getElementById("img-usuario");
@@ -20,9 +20,10 @@ const baseURL = "https://api.github.com"
 - Total de seguidores
 - Total de repositórios */
 
+console.log(formulario)
 const buscarUsuario = async (evento) => {
     evento.preventDefault();
-
+    
     let usuario = input.value.trim()
 
     if (!!usuario) {
