@@ -1,0 +1,98 @@
+<!-- //
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <nav id="menuNavegacao">
+      <h1 class="tituloNavegacao">
+        Github<span class="logotype">Search</span>
+      </h1>
+      <div class="searchContainer">
+        <input
+          name="inputUsuario"
+          id="inputUsuario"
+          placeholder="Digite o usuário"
+          type="text"
+        />
+        <button id="botao" type="submit"><i class="fas fa-search" ></i></button>
+
+      </div>
+    </nav>
+    <section class="profile" id="profile">
+    </section>
+    <footer>
+      <p class="textoFooter">
+        Desenvolvido por Carol Zago & Valentina Hastenreiter
+      </p>
+    </footer>
+    
+    <script src="/entrega-projeto/projeto-carol/script.js" defer type="text/java"></script>
+  </body>
+  
+</html> -->
+
+<!DOCTYPE html>
+<html lang="Pt-Br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/entrega-projeto/projeto-carol/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div >
+        <img  class="img-git-search" src="/entrega-projeto/projeto-carol/img/GithubSearch.jpg" alt="">
+      </div>
+
+        <form id="formulario" action="#" method="post" > 
+          <input type="text"  nome="search"  id="search" placeholder="Digite o usuário" required>
+          <button  type="submit"><i class="fas fa-search" ></i></button>
+        </form>
+
+    </header>
+    <section class="container">
+      <div class="secao-usuario">
+        <img  id="img-usuario" src="" alt="">
+        <h3 id="nome-usuario" ></h3>
+        <p id="apelido-usuario" ></p>
+        <p id="bio-usuario"></p>
+
+        <div class="caixas-cards" >
+        <div class="seguidores-card">
+           <img id="img-seguidores" src="" alt="">
+            <p id="seguidores-usuario"></p>
+        </div>
+
+        <div class="seguidores-card" >
+          <img id="repositorio-img" src="" alt="">
+          <p id="repositorio-usuario" ></p>
+        </div>
+        </div>
+     </div>    
+    </section>
+  
+  <script src="script.js"></script>    
+  
+  </body>
+
+    <footer>
+    </footer>
+
+</html>
