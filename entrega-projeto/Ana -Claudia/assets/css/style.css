@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+    body {
+        background: #E5E5E5;
+    }
+
+    #header {
+        position: absolute;
+        width: 100%;
+        height: 66px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+    }
+
+    #input-busca {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 12px 11px;
+
+        position: absolute;
+        width: 280px;
+        height: 42px;
+        left: 968px;
+        top: 13px;
+
+        background: #FFFFFF;
+        border: 1px solid #BEBEBE;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    #form-busca {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 377px;
+        height: 18px;
+        left: 11px;
+        top: 12px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+
+    #input-usuario {
+        position: static;
+        width: 200px;
+        height: 18px;
+        left: 0px;
+        top: 0px;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        border: none;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #btn {
+        position: static;
+        width: 10px;
+        height: 18px;
+        left: 359px;
+        top: 0px;
+        background: #FFFFFF;
+        border: none;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #img-btn {
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        height: 18px;
+    }
+
+    #id-logo {
+        position: absolute;
+        width: 207px;
+        height: 40px;
+        left: 13px;
+        top: 13px;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: #EC9B69;
+    }
+
+    #card-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: absolute;
+        width: 252px;
+        height: 426px;
+        left: 90px;
+        top: 179px;
+    }
+
+    #img-usuario {
+        position: static;
+        width: 252px;
+        height: 250px;
+        left: 0px;
+        top: 0px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+        border-radius: 8px;
+    }
+
+    #nome-usuario {
+        position: static;
+        width: 202px;
+        height: 40px;
+        left: 0px;
+        top: 0px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 4px 0px;
+        color: #EC9B69;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #username {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 68.75%;
+        bottom: -31.25%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 35px 0px 0px 0px;
+    }
+
+    #bio {
+        position: static;
+        left: 0%;
+        right: 0%;
+        top: 66.67%;
+        bottom: 0%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 16px 0px;
+    }
+
+    #card-segui-repo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 140px;
+        height: 40px;
+        left: 0px;
+        top: 386px;
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+
+    #info-repo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+        position: static;
+        width: 66px;
+        height: 40px;
+        left: 74px;
+        top: 0px;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #repo {
+        position: static;
+        left: 53.79%;
+        right: 5.3%;
+        top: 10%;
+        bottom: 10%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #emoji-repo {
+        position: static;
+        left: 5.3%;
+        right: 58.33%;
+        top: 20%;
+        bottom: 20%;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #info-seguidores {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+        position: static;
+        width: 66px;
+        height: 40px;
+        left: 0px;
+        top: 0px;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    #seguidores {
+        position: static;
+        left: 59.85%;
+        right: 9.85%;
+        top: 10%;
+        bottom: 10%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    #emoji-seguidores {
+        color: #EC9B69;
+        position: static;
+        left: 5.3%;
+        right: 58.33%;
+        top: 20%;
+        bottom: 20%;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    .mensagem {
+        height: 30px;
+        top: 280px;
+        left: 600px;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #313131;
+    }
+
+    #cards-repos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        flex-wrap: wrap;
+
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 420px;
+        top: 179px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+
+        position: static;
+        width: 300px;
+        height: auto;
+        left: 474px;
+        top: 0px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 25px;
+    }
+
+    .container {
+        position: static;
+        width: 400px;
+        height: 148px;
+        left: 0px;
+        top: 540px;
+
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        margin: 32px 0px;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+    }
+
+    .titulo-repo {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #313131;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 10px;
+    }
+
+    .pDescricao {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 8px 10px;
+    }
+
+    .pLinguagem {
+        position: static;
+        left: 20.41%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 8px;
+    }
+
+    .pEstrela {
+        position: static;
+        left: 55%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+
+        color: #313131;
+
+        opacity: 0.5;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 4px;
+    }
+
+    .pEstrela::before {
+        content: url('./../imagens/star_border.png');
+        position: static;
+        width: 18px;
+        height: 18px;
+        left: 0px;
+        top: 3px;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+
+        color: #FFD813;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 4px;
+    }
+
+    .div-linguagem-estrela {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px 10px 10px 10px;
+        height: auto;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 66px;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #p-footer {
+        color: #313131;
+        opacity: 0.5;
+    }
+
+    .p-footer {
+        color: #EC9B69;
+        margin-left: 5px;
+    }
