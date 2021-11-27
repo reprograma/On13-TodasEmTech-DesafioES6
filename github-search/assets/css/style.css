@@ -1,0 +1,251 @@
+body {
+    margin: 1vh;;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8f8f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ 
+
+p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+ 
+
+ h1 > span,
+p > a {
+    color: #EC9B69;
+}
+
+p > a {
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+ 
+
+.github-search   {
+
+    width: 100vw;
+
+    height: 66px;
+
+    background-color: #ffffff;
+
+    color: #EC9B69;
+
+    background-color: white;
+
+}
+
+.parteS {
+
+    color: black;
+
+}
+
+ 
+
+.search {
+
+    float:right;
+
+    margin-top: -3em;
+
+    background-color:transparent;
+
+    padding-left:5px;
+
+    border:none;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: flex-start;
+
+    align-content: flex-start;
+
+    background-color: white;  
+
+}
+
+ 
+
+.text {
+
+    background-color: white;
+
+    height: 90%;
+
+    width: 100%;
+
+   
+
+}
+
+
+
+
+.img {
+
+    width: 100px;
+
+    height: 100px;;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: absolute;
+
+    left: 45%;
+
+    top: 30%;  
+
+}
+
+ 
+
+.info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-content: center;
+
+    width: 1700px;
+
+    height: 1000px;      
+
+}
+
+ 
+
+.name {
+
+    color: #EC9B69;
+
+    height: 7%;
+
+}
+
+ 
+
+.username {
+
+    color:grey;
+
+ }
+
+ 
+
+ .bio {
+
+    color:grey;
+
+}
+
+ 
+
+.followers {
+
+    min-height: 1%;
+
+    min-width: 40%;
+
+    float: left;
+
+    width: 30%;
+
+    text-align: center ;
+
+    font-size: smaller;
+
+    text-indent: 0;
+
+    margin: 0.5em;
+
+    padding: 0.5em;
+
+    background: white;
+
+}
+
+ 
+
+.for {
+
+    float: right;
+
+    width: 0%;
+
+    font-size: smaller;
+
+    text-indent: 0;
+
+    margin: 0.5em;
+
+    padding: 0.5em;
+
+    background: white;
+
+}
+
+ 
+
+footer.fixar-rodape{
+
+    background: white;
+
+    bottom: 0;
+
+    left: 40%;
+
+    height: 40px;
+
+    position: fixed;
+
+    width: 100%;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+ 
+
+  .rodapeUm {
+
+    color:grey
+
+  }
+
+ 
+
+  .rodapeDois {
+
+    color: #EC9B69;
+
+  }
