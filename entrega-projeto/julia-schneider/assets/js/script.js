@@ -55,10 +55,10 @@ imgPerfil.setAttribute("src", giti.avatar_url);
 
 const validarInput = () => {
     input.value = ""
-
+}
 const meuErro = () => {
     const divErro = document.createElement("div");
     divErro.innerHTML = `<p> Página não encontrada</p>`
     document.body.appendChild(divErro); 
 
-
+}
