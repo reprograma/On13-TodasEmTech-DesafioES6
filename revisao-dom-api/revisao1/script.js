@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 97a98e72a5e83e1f6f4477e7599203c351d4eb63
 const card = document.getElementById("card-pokemon");
 const imgPoke = document.getElementById("img-pokemon");
 const nomePoke = document.getElementById("nome-pokemon");
@@ -57,5 +60,9 @@ const meuErro = () => {
 
 
 formulario.addEventListener("submit", eventoFormulario)
+<<<<<<< HEAD
 //console.log( eventoFormulario)
 
+=======
+//console.log( eventoFormulario)
+>>>>>>> 97a98e72a5e83e1f6f4477e7599203c351d4eb63
