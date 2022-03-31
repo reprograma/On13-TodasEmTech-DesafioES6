@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+.user-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.card-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5px;
+  gap: 10px;
+
+}
+
+.foto-perfil {
+  width: 252px;
+  height: 254, 66px;
+  border-radius: 10px;
+
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-notfound {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box--notfound {
+  width: 80%;
+  height: 95%;
+}
+
+.notfound-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #EC9B69;
+  text-align: center;
+  padding: 20px;
+}
+
+.box-notfound--text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #313131;
+  text-align: center;
+
+}
+
+.imagem-notfound {
+  width: 628px;
+  height: 720px;
+  margin: -130px 231px;
+}
